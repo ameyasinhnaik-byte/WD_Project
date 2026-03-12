@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Ameya</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="./projects.css" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <button class="menu-toggle">&#9776;</button>
+        <div class="links">
+            <a href="./portfolio1.html">Home</a>
+            <a href="./projects.html">Projects</a>
+            <a href="./about.html">About</a>
+            <a href="./contact.html">Contact</a>
+        </div>
+    </nav>
+    <h1>My Projects</h1>
+    <div class="project-container">
+        <div class="project">
+            <h3>Portfolio Website</h3>
+            <p>Built using HTML, CSS, and JavaScript to showcase my skills and experience.</p>
+        </div>
+        <div class="project">
+            <h3>Task Manager App</h3>
+            <p>A Node.js and MongoDB app to manage daily tasks with a sleek UI.</p>
+        </div>
+        <div class="project">
+            <h3>Marketing Dashboard</h3>
+            <p>React-based dashboard to visualize campaign data in real-time.</p>
+        </div>
+    </div>
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.links');
+      
+        menuToggle.addEventListener('click', () => {
+          navLinks.classList.toggle('show');
+        });
+      </script>  
+</body>
+</html>

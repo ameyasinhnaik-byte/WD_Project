@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ameya's Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="./portfolio.css" rel="stylesheet">
+</head>
+
+<body id="top">
+    <header>
+        <nav>
+            <div class="left">Ameya's Portfolio</div>
+            <button class="menu-toggle">&#9776;</button>
+            <div class="right">
+                <ul>
+                    <li><a href="./portfolio1.html">Home</a></li>
+                    <li><a href="#work">Experience</a></li>
+                    <li><a href="./projects.html">Projects</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, My Name is <span class="purple">Ameya</span>
+                <div>and I am a passionate</div>
+                <span id="element"></span>
+            </div>
+            <div class="rightSection">
+                <img src="./pi.png" alt="profile image">
+            </div>
+        </section>
+        <hr>
+        <section id="work" class="secondSection">
+            <h1 >Work Experience</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="./html.png" alt="html logo">
+                    <div class="vertical-title">
+                        HTML Developer (2015-2017)
+                    </div>
+                    <div class="vertical-desc">
+                        Worked on developing responsive web interfaces using HTML5 and CSS3 with cross-browser compatibility.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="./node.png" alt="node logo">
+                    <div class="vertical-title">
+                        Node.js Developer (2017-2019)
+                    </div>
+                    <div class="vertical-desc">
+                        Developed RESTful APIs and worked with real-time web apps using Node.js and Express.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="./insta.png" alt="instagram logo">
+                    <div class="vertical-title">
+                        Web Developer - Instagram (2019-2022)
+                    </div>
+                    <div class="vertical-desc">
+                        Maintained high-traffic frontend features and optimized user engagement on Instagram’s web app.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="./whatsapp.png" alt="whatsapp logo">
+                    <div class="vertical-title">
+                        Software Developer - Whatsapp (2022-2025)
+                    </div>
+                    <div class="vertical-desc">
+                        Led frontend development for core messaging UI features, improving performance and UX.
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>About</h3>
+                <p>Hi, I'm Ameya — a developer who crafts clean, responsive, and user-focused web apps. Let’s build something great together.</p>
+            </div>
+            <div class="footer-column">
+                <h3>Links</h3>
+                <ul>
+                    <li><a href="#top">Back to Top</a></li>
+                    <li><a href="./projects.html">Projects</a></li>
+                    <li><a href="./about.html">About</a></li>
+                </ul>
+            </div>
+            <div id="contact" class="footer-column">
+                <h3>Contact</h3>
+                <form action="https://httpbin.org/get" method="get">
+                    <input type="text" placeholder="Your Name" required name="Name">
+                    <input type="email" placeholder="Your Email" name="Email" required>
+                    <textarea rows="4" placeholder="Your Message" name="Message"></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 <a href="//">ameyasportfolio.com</a> | All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'SEO Specialist', 'Digital Marketer', 'Video Editor'],
+            typeSpeed: 50,
+        });
+    </script>
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('nav ul');
+    
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('show');
+        });
+    </script>
+</body>
+</html>

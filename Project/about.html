@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Ameya</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="./about.css" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="nav-links">
+            <a href="./portfolio1.html">Home</a>
+            <a href="./projects.html">Projects</a>
+            <a href="./about.html">About</a>
+            <a href="./contact.html">Contact</a>
+        </div>
+    </nav>
+    <div class="about-container">
+        <h1>About Me</h1>
+        <p>Hello! I'm Ameya, a passionate software developer with over 10 years of experience building fast, responsive, and modern web applications. I specialize in frontend development but also enjoy backend challenges. I'm deeply interested in user experience, performance optimization, and clean code.</p>
+        <p>In my free time, I enjoy contributing to open-source projects, writing technical blogs, and experimenting with new frameworks and tools. My hobbies are playing sports like cricket & football, reading books and travelling.</p>
+    </div>
+
+    <script>
+        // Function to toggle the navigation menu
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
+
+

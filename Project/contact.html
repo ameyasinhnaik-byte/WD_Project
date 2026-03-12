@@ -1,0 +1,46 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Ameya</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="./contact.css" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="hamburger" id="hamburger">&#9776;</div>
+        <a href="./portfolio1.html">Home</a>
+        <a href="./projects.html">Projects</a>
+        <a href="./about.html">About</a>
+        <a href="./contact.html">Contact</a>
+    </nav>
+    <div class="contact-form">
+        <h1>Contact Me</h1>
+        <form action="https://httpbin.org/get" method="get">
+            <label for="Name">Name:</label>
+            <input id="Name" type="text" name="name" required>
+
+            <label for="mailid">Email:</label>
+            <input id="mailid" type="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" rows="6" name="message" placeholder="Write your message here..."></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </div>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const nav = document.querySelector('nav');
+
+        hamburger.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
+
